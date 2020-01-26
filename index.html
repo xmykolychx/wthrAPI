@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="img/16x16.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Проект</title>
+</head>
+<body>
+
+    <header id='pageHeader'>
+        <h1>Проект "Погода API"</h1>
+    </header>
+
+    <article id='mainArticle'>
+        
+        <div id="current"><h2>Погодні умови</h2></div>
+
+        <div id="winfo">
+            <div>
+                <img src="img/temperature.png" alt="">
+                <p><h3>Температура, &deg;С</h3></p> <p id="temp"></p> 
+            </div>
+            <div>
+                <img src="img/gauge.png" alt="">
+                <p><h3>Тиск, мм.рт.ст.</h3></p> <p id="pressure"></p>
+            </div>
+            <div>
+                <img src="img/water.png" alt="">
+                <p><h3>Вологість, %</h3></p> <p id="humidity"></p>
+            </div>
+            <div>
+                <img src="img/wind.png" alt="">
+                <p><h3>Швидкість вітру, м/с</h3></p> <p id="wind_speed"></p>
+            </div>
+            <div>
+                <img src="img/cloud.png" alt="">
+                <p><h3>Хмарність, %</h3></p> <p id="clouds"></p>
+            </div>
+        </div>
+        
+
+        <div id="search">
+            <div class="head"><h3>Знайдіть інше місто</h3></div>
+            <div><input type="text" id="data_1" value="Івано-Франківськ"></div>
+            <div id="response"><input type="button" value="Пошук" id="search-btn"></div>
+            
+        </div>
+        
+    </article>
+
+    <footer id='pageFooter'>
+        <div id="con"><h3>Зв'яжіться зі мною, якщо маєте питання</h3></div>
+        <div id="icons">
+            <a href="#"><i class="fa fa-telegram"></i></a>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+        </div>
+        <div id="last"><h4>Гарного дня:)</h4></div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
